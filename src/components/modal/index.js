@@ -14,7 +14,7 @@ export function ModalPassword({ password, handleClose }) {
   async function handleCopyPassword() {
     await Clipboard.setStringAsync(password);
     await saveItem("@pass", password);
-    alert("Senha salva com sucesso!");
+    // alert("Senha salva com sucesso!");
     handleClose();
   }
 
@@ -54,18 +54,21 @@ const styles = StyleSheet.create({
   },
 
   content: {
-    backgroundColor: "#fff",
+    backgroundColor: "#202020",
     width: "85%",
     paddingTop: 24,
     paddingBottom: 24,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#34a02a",
   },
   title: {
     fontSize: 20,
     fontWeight: "bold",
     marginBottom: 20,
+    color: "#34a02a",
   },
 
   innerPassword: {
@@ -89,14 +92,21 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    flex: 1,
+    // flex: 1,
+    width: "48%",
     alignItems: "center",
     marginTop: 14,
     padding: 8,
+    borderWidth: 1,
+    borderColor: "#34a02a",
+    borderRadius: 8,
   },
   buttonSave: {
-    backgroundColor: "#250ff3",
+    backgroundColor: "#34a02a",
     borderRadius: 8,
+  },
+  buttonText: {
+    color: "#fff",
   },
   buttonSaveText: {
     color: "#fff",

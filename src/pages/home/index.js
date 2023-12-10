@@ -43,7 +43,7 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Image source={require("../../assets/logo.png")} style={styles.logo} />
-      <Text style={styles.title}>Gerador de senha</Text>
+      {/* <Text style={styles.title}>Gerador de senha</Text> */}
 
       <View style={styles.inputContainer}>
         <TextInput
@@ -79,6 +79,8 @@ const styles = StyleSheet.create({
 
   logo: {
     marginBottom: 60,
+    width: 200,
+    height: 200,
   },
 
   inputContainer: {
@@ -87,16 +89,19 @@ const styles = StyleSheet.create({
 
   input: {
     height: 50,
-    width: "80%",
+    width: 210,
     backgroundColor: "#474747",
     borderRadius: 8,
     padding: 8,
-    color: "#fff",
+    color: "#34a02a",
+    borderWidth: 1,
+    borderColor: "#34a02a",
+    marginTop: 20,
   },
 
   button: {
-    backgroundColor: "#250ff3",
-    width: "80%",
+    backgroundColor: "#34a02a",
+    width: 210,
     height: 50,
     alignItems: "center",
     justifyContent: "center",

@@ -51,11 +51,8 @@ export function Passwords() {
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "#250ff3",
-    paddingTop: 58,
-    paddingBottom: 14,
-    paddingLeft: 14,
-    paddingRight: 14,
+    backgroundColor: "#34a02a",
+    padding: 14,
   },
 
   title: {

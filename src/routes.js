@@ -13,6 +13,9 @@ export function Routes() {
         name="home"
         component={Home}
         options={{
+          tabBarActiveTintColor: "#34a02a",
+          tabBarActiveBackgroundColor: "#000",
+          tabBarInactiveBackgroundColor: "#000",
           tabBarShowLabel: false,
           headerShown: false,
           tabBarIcon: ({ focused, size, color }) => {
@@ -21,12 +24,20 @@ export function Routes() {
             }
             return <Ionicons size={size} color={color} name="home-outline" />;
           },
+
+          tabBarStyle: {
+            display: "flex",
+            borderTopColor: "#34a02a",
+          },
         }}
       />
       <Tab.Screen
         name="passwords"
         component={Passwords}
         options={{
+          tabBarActiveTintColor: "#34a02a",
+          tabBarActiveBackgroundColor: "#000",
+          tabBarInactiveBackgroundColor: "#000",
           tabBarShowLabel: false,
           headerShown: false,
           tabBarIcon: ({ focused, size, color }) => {
@@ -37,6 +48,10 @@ export function Routes() {
             return (
               <Ionicons size={size} color={color} name="lock-closed-outline" />
             );
+          },
+          tabBarStyle: {
+            display: "flex",
+            borderTopColor: "#34a02a",
           },
         }}
       />
